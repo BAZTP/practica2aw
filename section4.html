@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--Integrantes:
+    Michael Villarreal
+    Danny Jácome
+    Bryan Zambrano
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Practica Nº2</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/aside.css">
+        <!--Styles dashboard-->
+        <link rel="stylesheet" href="css/dashboard.css">
+       <!--Styles Carrusel -->
+    
+       <link rel="stylesheet" href="css/carousel.css">
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!--JQueryUI-->
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <!--Bootstrap-->
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!--Script-->
+        <script src="js/script.js"></script>
+        <script src="js/jQuery.js"></script>
+
+        <!--Dashboard-->
+        <script src="js/dashboard.js"></script>
+        
+          <!-- Custom styles for this template -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+         <!-- Custom styles for this template -->
+         <link href="dashboard.css" rel="stylesheet">
+
+        
+    </head>
+    <body>
+        <!--SVG-->
+        <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg>-->
+        <header>
+            <div class="logo">
+                <img src="src/img/logo.png" alt="logo">
+                <h1>Practica Nº2</h1>
+            </div>
+            <button id="menu-toggle" class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </header>
+        
+        <aside id="menu-container" class="menu-container">
+            <ul id="menu" class="menu">
+                    
+            </ul>
+        </aside>
+        <aside id="menu-mobile-container" class="menu-mobile-container">
+            <ul id="mobile-menu" class="menu">
+                    
+            </ul>
+        </aside>
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            
+            <!--Carrusel Boostrap-->
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" aria-current="true" class="active"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                 
+                </div>
+                <div class="carousel-inner">
+                    
+                    <div class="carousel-item active">
+                        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="https://i.etsystatic.com/17079133/r/il/85a4a2/2187189988/il_fullxfull.2187189988_3129.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nuestra empresa</h1>
+                            <p class="lead">En VAULT-TEC, nos apasiona llevar la emoción y la diversión del mundo de los videojuegos directamente a tus manos. Desde nuestra fundación, nos hemos dedicado a ser la principal fuente para los entusiastas de los videojuegos, ofreciendo una amplia gama de productos y servicios que satisfacen las necesidades de jugadores de todos los niveles.</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="carousel-item">
+                        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="https://img.freepik.com/vector-gratis/controles-videojuegos-estilo-neon-pared-ladrillo_24908-58916.jpg?size=338&ext=jpg&ga=GA1.1.1222169770.1701907200&semt=ais" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Nuestra Misión</h1>
+                            <p class="lead">Nuestra misión es simple pero poderosa: proporcionar a nuestros clientes una experiencia de juego incomparable. Nos esforzamos por ser más que una tienda de videojuegos; somos un destino para los amantes de los juegos que buscan la mejor selección, los últimos lanzamientos y el conocimiento experto que solo un equipo apasionado puede ofrecer.
+
+                            </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="https://img.freepik.com/fotos-premium/ilustracion-joystick-gamepad-controlador-juegos-cyberpunk_691560-5812.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Lo Que Ofrecemos</h1>
+                            <p class="lead">En VAULT-TEC, nos enorgullece ofrecer una extensa selección de juegos para todas las consolas líderes del mercado. Ya seas un fanático de Nintendo, PlayStation o Xbox, encontrarás títulos emocionantes que se adaptan a tu preferencia de juego. Desde las consolas más recientes hasta los clásicos atemporales, ofrecemos una amplia variedad de hardware y accesorios para satisfacer todos los gustos y presupuestos.
+
+                            </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+  
+                    <div class="carousel-item">
+                        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                            <img style="width: 513.08px; height: 513.08px;" src="https://www.theindianwire.com/wp-content/uploads/2021/10/Online-gaming.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Expertos en Juegos</h1>
+                            <p class="lead">Somos más que vendedores; somos apasionados jugadores. Nuestro equipo está compuesto por expertos en videojuegos que conocen la industria de adentro hacia afuera. Estamos aquí para ofrecerte recomendaciones, consejos y la información más reciente sobre los juegos que amas, ya sean de Nintendo, PlayStation, Xbox u otras plataformas.
+
+                            </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="https://static.vecteezy.com/system/resources/previews/002/169/750/non_2x/online-feedback-reputation-quality-customer-review-concept-flat-style-businessman-hand-finger-pointing-five-gold-star-rating-on-green-background-eps-illustration-vector.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Compromiso con la Calidad y la Satisfacción del Cliente</h1>
+                            <p class="lead">La calidad es nuestra prioridad. Trabajamos con los principales fabricantes y distribuidores para garantizar que cada producto que vendemos cumpla con los estándares más altos. Además, nos enorgullece ofrecer un servicio al cliente excepcional para asegurarnos de que tu experiencia de compra sea tan emocionante como tus momentos de juego.
+
+                            </p>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                            <div class="col-10 col-sm-8 col-lg-6">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXC84CqAR5HUkv_iUZRDtYR0Ftx-FS7v---3i8UG1GJQ-kASnCZ0otF6xp-ankxFMaD4I&usqp=CAU" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                            </div>
+                            <div class="col-lg-6">
+                            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Únete a la Comunidad de VAULT-TEC</h1>
+                            <p class="lead">Te invitamos a explorar nuestro catálogo, sumergirte en el mundo de los videojuegos y unirte a nuestra comunidad de jugadores apasionados. Ya seas un novato curioso o un veterano experimentado, en VAULT-TEC encontrarás todo lo que necesitas para llevar tu experiencia de juego al siguiente nivel.
+                                <br>
+                                ¡Gracias por elegir VAULT-TEC como tu destino de videojuegos!
+                            </p>
+                           
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </main>
+        <footer>
+            <div class="pie-de-pagina">
+                <div class="logo-footer">
+                    <img src="src/img/logo.png" alt="logo">
+                </div>
+                <div class="servicios-contactos">
+                    <div class="servicios-footer">
+                        <h2>Nuestros servicios</h2>
+                        <ul id="servicios-footer-lista">
+                            
+                        </ul>
+                    </div>
+                    <div class="contactenos-footer">
+                        <h2>Contactenos</h2>
+                        <ul>
+                            <li>
+                                <a id="nombre1" href="">Bryan Zambrano</a>
+                                <div id="dropdawn-content-redes-Bryan">
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/facebook.ico" alt="fb">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/instagram.ico" alt="ig">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/twitter.ico" alt="X">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/youtube.ico" alt="yt">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a id="nombre2" href="">Danny Jácome</a>
+                                <div id="dropdawn-content-redes-Danny">
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/facebook.ico" alt="fb">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/instagram.ico" alt="ig">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/twitter.ico" alt="X">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/youtube.ico" alt="yt">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a id="nombre3" href="">Michael Villarreal</a>
+                                <div id="dropdawn-content-redes-Michael">
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/facebook.ico" alt="fb">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/instagram.ico" alt="ig">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/twitter.ico" alt="X">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/youtube.ico" alt="yt">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script><script src="js/dashboard.js"></script></body>
+</html>

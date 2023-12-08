@@ -1,0 +1,78 @@
+footer{
+    background-color: var(--color-primary);
+    color: var(--color-text-white);
+    padding: 1rem;
+    height: auto;
+    position: relative;
+    border-top: 5px solid var(--color-tertiary);
+}
+
+.icon{
+    display: flex;
+    height: 100%;
+}
+
+.icon img{
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.pie-de-pagina{
+    display: flex;
+    padding: 30px;
+    width: 100%;
+}
+
+.logo-footer{
+    padding: 0px 50px 0px 0px;
+}
+
+.servicios-footer{
+    padding: 0px 50px 0px 50px;
+}
+
+#servicios-footer-lista a{
+    color: var(--color-text-white);
+    text-decoration: none;
+}
+
+.contactenos-footer{
+    padding: 0px 50px 0px 50px;
+}
+
+.contactenos-footer a, .contactenos-footer li{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-text-white);
+}
+
+#dropdawn-content-redes-Danny, #dropdawn-content-redes-Bryan, #dropdawn-content-redes-Michael{
+    display: none;
+	position: relative;
+	z-index: 1;
+	border: 1px solid var(--color-primary);
+	background-color: hsla(109, 99%, 27%, 0.8);
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+@media screen and (min-width:929px){
+    .servicios-contactos{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 928px){
+    .servicios-contactos{
+        display: block;
+    }
+    .servicios-footer ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .servicios-footer li{
+        padding-right: 40px;
+    }
+}
+

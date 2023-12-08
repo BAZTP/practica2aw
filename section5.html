@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--Integrantes:
+    Michael Villarreal
+    Danny Jácome
+    Bryan Zambrano
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Practica Nº2</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/aside.css">
+        <!--Styles -->
+        <link rel="stylesheet" href="css/features.css">
+   
+         <!--Styles section 3 Barra -->
+         <link rel="stylesheet" href="css/section3.css">
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!--JQueryUI-->
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <!--Bootstrap-->
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!--Script-->
+        <script src="js/script.js"></script>
+        <script src="js/jQuery.js"></script>
+        <!--Script section 3 Barra-->
+        <script src="js/section3.js"></script>
+
+      
+        
+        
+          <!-- Custom styles for this template -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+         <!-- Custom styles for this template -->
+         <link href="dashboard.css" rel="stylesheet">
+
+        
+    </head>
+    <body>
+        <!--SVG-->
+        <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg>-->
+        <header>
+            <div class="logo">
+                <img src="src/img/logo.png" alt="logo">
+                <h1>Practica Nº2</h1>
+            </div>
+            <button id="menu-toggle" class="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </header>
+
+        <aside id="menu-container" class="menu-container">
+            <ul id="menu" class="menu">
+                    
+            </ul>
+        </aside>
+        <aside id="menu-mobile-container" class="menu-mobile-container">
+            <ul id="mobile-menu" class="menu">
+                    
+            </ul>
+        </aside>
+        
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+             <!--Boostrap features-->
+           <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Juegos de PlayStation Studios exclusivos</h2>
+        
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <!--Parte 1-->
+                <!--Juego 1-->
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-1.1.jpg');">
+                       
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                      </div>
+                    </div>
+                    <pre>God of War Ragnarök        <del>$69.99</del>  $32.63</pre>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                    </div>
+                  </div>
+                  
+              <!--Juego 2-->
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-1.2.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                   
+                  </div>
+                </div>
+                <pre>Assassin's Creed® Mirage    <del>$69.99</del>  $32.63</pre>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                </div>
+              </div>
+                <!--Juego 3-->
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-1.3.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                    
+                  </div>
+                </div>
+                <pre>Hogwarts Legacy           <del>$69.99</del>  $32.63</pre>
+                
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                </div>
+              </div>
+             
+
+
+
+            </div>
+             <!--Parte 2-->
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                 <!--Juego 4-->
+              <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-1.4.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                    
+                  </div>
+                </div>
+                <pre>Street Fighter 6           <del>$69.99</del>  $32.63</pre>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                </div>
+              </div>
+                <!--Juego 5-->
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-1.5.jpg');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                        
+                      </div>
+                    </div>
+                    <pre>Alan Wake 2                 <del>$69.99</del>  $32.63</pre>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                    </div>
+                  </div>
+                  <!--Juego 6-->
+                  <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-1.6.jpg');">
+                      <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                        
+                      </div>
+                    </div>
+                    <pre>Mortal Kombat 1             <del>$69.99</del>  $32.63</pre>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                    </div>
+                  </div>
+               
+            </div>
+            <!--Parte 3-->
+            
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <!--Juego 7-->
+             <div class="col">
+               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-4.jpg');">
+                 <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                   <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                   
+                 </div>
+               </div>
+               <pre>Spider-Man 2                <del>$69.99</del>  $32.63</pre>
+               <div class="btn-group">
+                   <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                   <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+               </div>
+             </div>
+               <!--Juego 8-->
+               <div class="col">
+                   <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('src/img/unsplash-photo-5.jpg');">
+                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                       <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                       
+                     </div>
+                   </div>
+                   <pre>FC 2024                    <del>$69.99</del>  $32.63</pre>
+                   <div class="btn-group">
+                       <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                       <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                   </div>
+                 </div>
+                 <!--Juego 9-->
+                 <div class="col">
+                   <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image:url('src/img/unsplash-photo-6.jpg');">
+                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                       <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                       
+                     </div>
+                   </div>
+                   <pre>Gran Turismo Sport          <del>$69.99</del>  $32.63</pre>
+                   <div class="btn-group">
+                       <button type="button" class="btn btn-sm btn-outline-secondary">PS4</button>
+                       <button type="button" class="btn btn-sm btn-outline-secondary">PS5</button>
+                   </div>
+                 </div>
+              
+           </div>
+
+
+
+
+
+
+          </div>
+        
+        </main>
+
+
+        <footer>
+            <div class="pie-de-pagina">
+                <div class="logo-footer">
+                    <img src="src/img/logo.png" alt="logo">
+                </div>
+                <div class="servicios-contactos">
+                    <div class="servicios-footer">
+                        <h2>Nuestros servicios</h2>
+                        <ul id="servicios-footer-lista">
+                            
+                        </ul>
+                    </div>
+                    <div class="contactenos-footer">
+                        <h2>Contactenos</h2>
+                        <ul>
+                            <li>
+                                <a id="nombre1" href="">Bryan Zambrano</a>
+                                <div id="dropdawn-content-redes-Bryan">
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/facebook.ico" alt="fb">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/instagram.ico" alt="ig">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/twitter.ico" alt="X">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/youtube.ico" alt="yt">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a id="nombre2" href="">Danny Jácome</a>
+                                <div id="dropdawn-content-redes-Danny">
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/facebook.ico" alt="fb">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/instagram.ico" alt="ig">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/twitter.ico" alt="X">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/youtube.ico" alt="yt">
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a id="nombre3" href="">Michael Villarreal</a>
+                                <div id="dropdawn-content-redes-Michael">
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/facebook.ico" alt="fb">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/instagram.ico" alt="ig">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/twitter.ico" alt="X">
+                                    </a>
+                                    <a href="">
+                                        <img class="iconos-tamano" src="./src/icon/youtube.ico" alt="yt">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js" integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp" crossorigin="anonymous"></script><script src="js/dashboard.js"></script></body>
+</html>

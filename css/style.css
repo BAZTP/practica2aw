@@ -1,0 +1,20 @@
+:root{
+    --color-primary: rgb(8, 221, 1);
+    --color-secondary: #1D61FF;
+    --color-tertiary: #198801;
+    --color-quaternary: #4CB935;
+    --color-quinary: #c1c1c1;
+    --color-text: #000000;
+    --color-text-white: #ffff;
+}
+
+body{
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.iconos-tamano{
+    width: 30px;
+    height: 30px;
+}
